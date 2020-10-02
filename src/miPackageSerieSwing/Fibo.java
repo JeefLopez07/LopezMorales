@@ -1,4 +1,4 @@
-package Paquete;
+package miPackageSerieSwing;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

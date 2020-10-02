@@ -1,4 +1,4 @@
-package Paquete;
+package miPackageSerieSwing;
 
 public class Valores 
 {

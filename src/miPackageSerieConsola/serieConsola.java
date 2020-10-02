@@ -1,4 +1,4 @@
-package miTrabajo;
+package miPackageSerieConsola;
 
 import java.util.Scanner;
 

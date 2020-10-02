@@ -1,4 +1,4 @@
-package miPackage;
+package miPackageLogin;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
