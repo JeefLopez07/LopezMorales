@@ -75,12 +75,13 @@ public class Login extends JFrame {
 			{
 				String miNombre,miContraseña,miResultado;
 				
+				
 				miNombre=txtNombre.getText();
 				miContraseña= new String(txtContraseña.getText());
 				
 				if(miNombre.equals("Roberto")&&miContraseña.equals("Lopez007"))
 				{
-					miResultado= "Login Correcto";
+					miResultado= "Login Correcto"+txtNombre.getText();
 				}else
 				{
 					miResultado= "Login Incorrecto";
