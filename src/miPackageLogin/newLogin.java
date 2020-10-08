@@ -3,17 +3,17 @@ package miPackageLogin;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Login extends JFrame {
+public class newLogin extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtNombre;
@@ -27,7 +27,7 @@ public class Login extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Login frame = new Login();
+					newLogin frame = new newLogin();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,9 +39,9 @@ public class Login extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Login() {
+	public newLogin() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 440, 481);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -49,13 +49,13 @@ public class Login extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Nombre");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNewLabel.setBounds(27, 44, 102, 31);
+		lblNewLabel.setBounds(35, 41, 104, 22);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblContrasea = new JLabel("Contrase\u00F1a");
-		lblContrasea.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblContrasea.setBounds(27, 97, 102, 31);
-		contentPane.add(lblContrasea);
+		JLabel lblContrsea = new JLabel("Contrse\u00F1a");
+		lblContrsea.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblContrsea.setBounds(35, 87, 104, 22);
+		contentPane.add(lblContrsea);
 		
 		txtNombre = new JTextField();
 		txtNombre.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -81,7 +81,7 @@ public class Login extends JFrame {
 				
 				if(miNombre.equals("Roberto")&&miContraseña.equals("Lopez007"))
 				{
-					miResultado= "Login Correcto"+txtNombre.getText();
+					miResultado= "Login Correcto";
 				}else
 				{
 					miResultado= "Login Incorrecto";
@@ -108,7 +108,8 @@ public class Login extends JFrame {
 		txtResultado = new JTextField();
 		txtResultado.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		txtResultado.setColumns(10);
-		txtResultado.setBounds(139, 224, 140, 28);
+		txtResultado.setBounds(122, 211, 155, 31);
 		contentPane.add(txtResultado);
+		}
 	}
-}
+
