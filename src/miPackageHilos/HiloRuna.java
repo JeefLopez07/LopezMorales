@@ -6,9 +6,9 @@ public class HiloRuna implements Runnable
 	
 	public static void main(String[]args)
 	{
-		new HiloRuna("Hilo_1 ");
-		new HiloRuna("Hilo_2 ");
-		new HiloRuna("Hilo_3 ");
+		new HiloRuna("Hilo 1 ");
+		new HiloRuna("Hilo 2 ");
+		new HiloRuna("Hilo 3 ");
 
 		System.out.println(Thread.currentThread().getName()+" Termino");
 		

@@ -15,7 +15,7 @@ public class HiloA extends Thread
 		{
 			for(int x=1;x<=10;x++) 
 			{
-				int delay=(int)(Math.random()*1000);
+				int delay=(int)(Math.random()*1500);
 				System.out.println(Nombre+" "+ x +" " + delay);
 				Thread.sleep(delay);
 			}
